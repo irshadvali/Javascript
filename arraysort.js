@@ -11,3 +11,12 @@ for (var i = 1; i < Arr.length; i++)
 
 console.log(Arr);
 console.log(Arr2.sort());
+
+
+
+
+/*-----------------------------*/
+const original = [1, 7, 3, 5];
+const sorted = original.slice().sort((a, b) => a - b)
+
+console.log(sorted)
