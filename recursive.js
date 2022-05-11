@@ -22,11 +22,11 @@ let uniqCount= arr.reduce((prev,cur)=>{
     prev[cur]=(prev[cur] || 0) + 1;
     return prev;
 },{})
-console.log(uniqCount);
+console.log(uniqCount);//{ Mumbai: 2, Delhi: 3, Kanpur: 3, Bangalore: 2 }
 
 count ={}
 
 arr.forEach(function(i){
  count[i]=(count[i]||0)+1
 })
-console.log(count);
+console.log(count);// { Mumbai: 2, Delhi: 3, Kanpur: 3, Bangalore: 2 }
