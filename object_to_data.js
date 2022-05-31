@@ -19,12 +19,18 @@ const obj = {
 };
 
 function fp(obj,path){
-let d2=JSON.stringify(obj['a']['b']['c']['d'])
-console.log(JSON.stringify(obj['a']['b']['c']['d']))
-
-  
-  return d2
+// let d2=JSON.stringify(obj['a']['b']['c']['d'])
+// console.log(JSON.stringify(obj['a']['b']['c']['d']))
+//return d2
+path=path.split('.')
+var len=path.length;
+  for (var i=0;i<len; i++){
+        obj = obj[path[i]];
+        console.log(obj)
+    };
+    return obj;
 
 }
 
-console.log(fp(obj,'abc')); //12
+
+console.log(fp(obj,'a.b.c.d')); //12

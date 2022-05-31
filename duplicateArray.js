@@ -31,3 +31,20 @@ function toUniqueArray(a){
 var colors = ["red","red","green","green","green"];
 var colorsUnique=toUniqueArray(colors); // ["red","green"]
 console.log(colorsUnique)
+
+
+function removeDup(arr) {
+    let result = []
+    arr.forEach((item, index) => { if (arr.indexOf(item) == index) result.push(item) });
+    return result;
+  }
+  console.log(removeDup(colors))
+
+  function removeDup2(arr) {
+    let result = []
+    arr.map((item, index) => { 
+        if (arr.indexOf(item) == index){ result.push(item)}
+     });
+    return result;
+  }
+  console.log(removeDup2(colors))
