@@ -34,3 +34,6 @@ var len=path.length;
 
 
 console.log(fp(obj,'a.b.c.d')); //12
+
+const lens = (obj, path) => path.split(".").reduce((o, key) => o && o[key] ? o[key] : null, obj); 
+console.log(lens(obj, 'a.b.c'))
