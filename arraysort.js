@@ -36,3 +36,42 @@ var twoSum =(nums, target) =>{
 
 console.log("=============")
 console.log(twoSum([1,3,4,5],7))
+
+
+
+
+const maxSpeed = {
+    car: 300, 
+    bike: 60, 
+    motorbike: 200, 
+    airplane: 1000,
+    helicopter: 400, 
+    rocket: 8 * 60 * 60
+};
+
+const sortable = Object.fromEntries(
+    Object.entries(maxSpeed).sort(([,a],[,b]) => a-b)
+);
+
+console.log(sortable);
+
+
+const maxSpeed2 = {
+    car: 300, 
+    bike: 60, 
+    motorbike: 200, 
+    airplane: 1000,
+    helicopter: 400, 
+    rocket: 8 * 60 * 60
+};
+
+const sortable2 = Object.entries(maxSpeed).sort(([,a],[,b])=>a-b);
+const finalRe = Object.fromEntries(sortable2)
+console.log(sortable2);
+console.log(finalRe);
+
+
+
+const arr21 = [7, 1, 8, [[[5, 4]]]];
+
+console.log(arr21.flat(Infinity).sort());
